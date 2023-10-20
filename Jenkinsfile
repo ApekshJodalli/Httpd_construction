@@ -9,7 +9,7 @@ pipeline {
         stage('Clone the project ') {
             steps {
                 echo 'clone the project'
-                git branch: 'main', url: 'https://github.com/vincloud2/Httpd_construction.git'
+                git branch: 'main', url: 'https://github.com/ApekshJodalli/Httpd_construction.git'
             }
         }
         stage('Coping the project') {
