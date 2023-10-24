@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy to httpd server') {
             steps {
                 echo 'coping the file '
-                sh '''scp -i /home/ec2-user/key.pem -r /var/jenkins/workspace/html_project_Contruction/* ec2-user@54.169.254.142:/var/www/html'''
+                sh '''scp -i /home/ec2-user/ap1.pem -r /var/jenkins/workspace/html_project_Contruction/* ec2-user@54.169.254.142:/var/www/html'''
             }
         }
         stage('Stage4_dummy') {
